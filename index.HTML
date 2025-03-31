@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas HTML</title>
+    <link rel="stylesheet" href="ETIQUETAS.CSS">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".ETIQUETAS HTML a").forEach(anchor => {
+                anchor.addEventListener("click", function (e) {
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        targetElement.scrollIntoView({ behavior: "smooth" });
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body style="background-image: url('IMAGEN/48a4654419674ef8bd2b3477d3cb8d5b.jpg'); background-size: cover; background-position: center;">
+    <wbr><h1><i>¿Qué son las etiquetas?</i></h1></wbr>
+    <center><wbr><p><i><b>Las etiquetas ayudan a organizar y filtrar la información de manera eficiente. Son claves para mejorar la experiencia de navegación y encontrar contenido relevante rápidamente.</b></b></i></p></wbr></center>
+    <br>
+    <nav>
+        <ul class="MENU">
+            <li><a href="#">MENU</a>
+                <ul>
+                    <li><a href="#figure">FIGURE</a></li>
+                    <li><a href="#figcaption">FIGCAPTION</a></li>
+                    <li><a href="#mark">MARK</a></li>
+                    <li><a href="#progress">PROGRESS</a></li>
+                    <li><a href="#meter">METER</a></li>
+                    <li><a href="#details">DETAILS</a></li>
+                    <li><a href="#summary">SUMMARY</a></li>
+                    <li><a href="#canvas">CANVAS</a></li>
+                    <li><a href="#datalist">DATALIST</a></li>
+                    <li><a href="#input">INPUT TYPE</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <section id="figure">
+        <center>
+            <h2 style="margin-bottom: 30px;"><wbr><i><b>FIGURE</b></i></wbr></h2>
+            
+            <p style="margin-bottom: 30px;"><wbr>Contenedor para una imagen o contenido multimedia, junto con su pie de foto.</wbr></p>
+            
+            <pre style="margin-bottom: 30px;">&lt;figure&gt;...&lt;/figure&gt;</pre>
+            
+            <img src="IMAGEN/86a5a08cbc07aed852780c4122c77665456a8e4b.png" width="300">
+        </center>
+    </section>
+    
+    
+    <section id="figcaption">
+    <><h2>FIGCAPTION</h2></section>
+        <p>Define un pie de foto para una imagen o contenido dentro de la etiqueta.</p>
+        <pre>&lt;figcaption&gt;...&lt;/figcaption&gt;</pre>
+        <img src="IMAGEN/HTML-Review-9.png" width="300">
+    </section>
+    
+    
+    <section id="mark">
+        <h2>MARK</h2>
+        <p>Resalta texto importante o que se desea destacar.</p>
+        <pre>&lt;mark&gt;...&lt;/mark&gt;</pre>
+        <img src="IMAGEN/mark.png" width="300">
+    </section>
+    
+    <section id="progress">
+        <h2>PROGRESS</h2>
+        <p>Define una barra de progreso.</p>
+        <pre>&lt;progress value="50" max="100"&gt;&lt;/progress&gt;</pre>
+        <img src="IMAGEN/Progress.png" width="300">
+    </section>
+    
+    <section id="meter">
+        <h2>METER</h2>
+        <p>Representa un valor dentro de un rango determinado.</p>
+        <pre>&lt;meter value="0.6"&gt;&lt;/meter&gt;</pre>
+        <img src="IMAGEN/Meter.png" width="300">
+    </section>
+    
+    <section id="details">
+        <h2>DETAILS</h2>
+        <p>Define un bloque de contenido que el usuario puede mostrar u ocultar.</p>
+        <pre>&lt;details&gt;...&lt;/details&gt;</pre>
+        <img src="IMAGEN/Details.png" width="300">
+    </section>
+    
+    <section id="summary">
+        <h2>SUMMARY</h2>
+        <p>Define un encabezado para el contenido dentro de la etiqueta.</p>
+        <pre>&lt;summary&gt;...&lt;/summary&gt;</pre>
+        <img src="IMAGEN/Summary.webp" width="300">
+    </section>
+    
+    <section id="canvas">
+        <h2>CANVAS</h2>
+        <p>Define un área de dibujo en la que se puede dibujar mediante JavaScript.</p>
+        <pre>&lt;canvas id="myCanvas"&gt;...&lt;/canvas&gt;</pre>
+        <img src="IMAGEN/Canvas.png" width="300">
+    </section>
+    
+    <section id="datalist">
+        <h2>DATALIST</h2>
+        <p>Define un conjunto de opciones predefinidas para un campo de entrada.</p>
+        <pre>&lt;datalist id="browsers"&gt;...&lt;/datalist&gt;</pre>
+        <img src="IMAGEN/Detalist.png" width="300">
+    </section>
+    
+    <section id="input">
+        <h2>INPUT TYPE</h2>
+        <p>Define un control deslizante para elegir un valor dentro de un rango.</p>
+        <pre>&lt;input type="range" min="0" max="100"&gt;</pre>
+        <img src="IMAGEN/range.jpg" width="300">
+    </section>
+</body>
+</html>
